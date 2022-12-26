@@ -1,0 +1,18 @@
+
+tags:
+  - name : File Processing
+consumes:
+  - multipart/form-data  
+parameters:
+  - name: file
+    in: formData
+    type: file
+    required: true
+    description: Upload your CSV File (Data have to be on the first column of the CSV)
+responses:
+  '200':
+    description: Succesfull response
+  '400':
+    description: Bad Request
+  '500':
+    description: Internal Server Error
